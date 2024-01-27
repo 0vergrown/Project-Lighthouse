@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>First Light CAC :: Gallery</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" />
+        <link href="css/dashboard-gallery/style.css" rel="stylesheet" />
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    </head>
+
+    <!--
+    Indiana University Kokomo
+    INFO-I 451: Design and Development of an Information System
+    Spring Semester 2024
+
+    Senior Capstone Project: First Light Child Advocacy Center (Marion, Grant County, Indiana)
+
+    Team BitBusters: Emily Henry, Michael LaFleur, Nolan Lapp, Mohnik Rajakumar, Trey Shock
+
+    Instructors: Dr. Awny Alnusair, Dr. Md Nour Hossain
+    -->
+
+    <body>
+        <div class="container-fluid" style="margin-left: -12px !important;">
+            <div class="row">
+                <div class="col-xxl-1 col-xl-1 col-lg-2 col-md-2 col-sm-3 col-3">
+                    <nav>
+                        <!-- https://getbootstrap.com/docs/5.0/examples/sidebars/ (right click, view page source)-->
+                        <!-- https://stackoverflow.com/questions/71598493/how-to-adjust-size-of-bootstrap-icons-from-html-code -->
+
+                        <div class="d-flex flex-column flex-shrink-0 bg-light" style="background-color: #ffa16e !important; height: 100vh; width: 5.5rem;">
+                            <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
+                                <li class="dashnav-item nav-item">
+                                    <a href="dashboard-events.html" class="dashnav-link py-3" title="Events" data-bs-toggle="tooltip" data-bs-placement="right">
+                                        <i class="dashnav-icon bi bi-calendar2-fill h2"></i>
+                                    </a>                                    
+                                </li>
+                                <li class="dashnav-item nav-item">
+                                    <a href="dashboard-staffing.html" class="dashnav-link py-3" title="Staffing" data-bs-toggle="tooltip" data-bs-placement="right">
+                                        <i class="dashnav-icon bi bi-people-fill h2"></i>
+                                    </a>
+                                </li>
+                                <li class="dashnav-item nav-item">
+                                    <a href="dashboard-donors.html" class="dashnav-link py-3" title="Donors" data-bs-toggle="tooltip" data-bs-placement="right">
+                                        <i class="dashnav-icon bi bi-piggy-bank-fill h2"></i>
+                                    </a>
+                                </li>
+                                <li class="dashnav-item nav-item">
+                                    <a href="dashboard-gallery.html" class="dashnav-link active py-3" title="Gallery" data-bs-toggle="tooltip" data-bs-placement="right">
+                                        <i class="dashnav-icon bi bi-images h2"></i>
+                                    </a>
+                                </li>
+                                <li class="dashnav-item nav-item">
+                                    <a href="dashboard-settings.html" class="dashnav-link py-3" title="Settings" data-bs-toggle="tooltip" data-bs-placement="right">
+                                        <i class="dashnav-icon bi bi-gear-fill h2"></i>
+                                    </a>
+                                </li>
+                                <li class="dashnav-item nav-item">
+                                    <a href="dashboard-logout.html" class="dashnav-link py-3" title="Log Out" data-bs-toggle="tooltip" data-bs-placement="right">
+                                        <i class="dashnav-icon bi bi-box-arrow-right h2"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+
+                <div class="col-xxl-11 col-xl-11 col-lg-10 col-md-10 col-sm-9 col-9" style="padding: 20px;">
+                    <!-- https://getbootstrap.com/docs/5.3/components/breadcrumb/ -->
+                    <nav aria-label="breadcrumb" style="display: flex; justify-content: space-between; align-items: center;">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="dashboard-home.html">Dashboard</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Gallery</li>
+                        </ol>
+                        
+                        <!-- Moon Icon (Dark Mode) -->
+                        <a href="#" class="moon-icon-link" title="Night Mode">
+                            <i class="bi bi-moon"></i>
+                        </a>
+                    </nav>                    
+
+                    <hr />
+
+                    <!--
+                    *******************************************************************************
+                    MAIN
+                    *******************************************************************************
+                    -->
+
+                    <main>
+                        <!-- ########## PAGE CONTENT GOES HERE ########## -->
+
+                        <!-- Welcome Text and Add Photo Button -->
+                        <div class="d-flex justify-content-between align-items-center mb-4">
+                            <h1>Welcome, Director!</h1>
+                            <button type="button" class="btn btn-round btn-warning">Add Photo</button>
+                        </div>
+
+                        <!-- Gallery Title -->
+                        <div class="text-center mb-4">
+                            <h2 class="gallery-title">Photo Gallery</h2>
+                        </div>
+
+                        <!-- Filter Buttons -->
+                        <div class="text-center mb-4">
+                            <div class="filter-buttons">
+                                <button class="btn-filter active" onclick="filterSelection('all')">All</button>
+                                <button class="btn-filter" onclick="filterSelection('slideshow')">Slideshow</button>
+                                <button class="btn-filter" onclick="filterSelection('employees')">Employees</button>
+                                <button class="btn-filter" onclick="filterSelection('photos-page')">Photo Page</button>
+                            </div>
+                        </div>
+
+                        <!-- Gallery Images -->
+                        <div class="row">
+                            <!-- First Column -->
+                            <div class="column">
+                                <!-- Slideshow Images -->
+                                <div class="image-container slideshow">
+                                    <img src="images/slideshow1.png" alt="Slideshow Image" />
+                                </div>
+                                <div class="image-container slideshow">
+                                    <img src="images/slideshow2.png" alt="Slideshow Image" />
+                                </div>
+                                <div class="image-container slideshow">
+                                    <img src="images/slideshow3.png" alt="Slideshow Image" />
+                                </div>
+                            </div>
+
+                            <!-- Second Column -->
+                            <div class="column">
+                                <!-- Employee Images -->
+                                <div class="image-container employees">
+                                    <img src="images/beach.png" alt="Employee Image" />
+                                </div>
+                                <div class="image-container employees">
+                                    <img src="images/beach.png" alt="Employee Image" />
+                                </div>
+                                <div class="image-container employees">
+                                    <img src="images/beach.png" alt="Employee Image" />
+                                </div>
+                            </div>
+
+                            <!-- Third Column -->
+                            <div class="column">
+                                <!-- Photo Page Images -->
+                                <div class="image-container photos-page">
+                                    <img src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png" alt="Photos Page Image" />
+                                </div>
+                                <div class="image-container photos-page">
+                                    <img src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png" alt="Photos Page Image" />
+                                </div>
+                                <div class="image-container photos-page">
+                                    <img src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png" alt="Photos Page Image" />
+                                </div>
+                            </div>
+
+                            <!-- Forth Column -->
+                            <div class="column">
+                                <!-- Photo Page Images -->
+                                <div class="image-container photos-page">
+                                    <img src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png" alt="Photos Page Image" />
+                                </div>
+                                <div class="image-container photos-page">
+                                    <img src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png" alt="Photos Page Image" />
+                                </div>
+                                <div class="image-container photos-page">
+                                    <img src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png" alt="Photos Page Image" />
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </div>
+
+        <!--
+        *******************************************************************************
+        JAVASCRIPT
+        *******************************************************************************
+        -->
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <script src="javascript/dashboard-gallery/photo-gallery-filter.js"></script>
+    </body>
+</html>

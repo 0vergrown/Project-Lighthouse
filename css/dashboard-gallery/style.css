@@ -1,0 +1,161 @@
+/*
+Indiana University Kokomo
+INFO-I 451: Design and Development of an Information System
+Spring Semester 2024
+
+Senior Capstone Project: First Light Child Advocacy Center (Marion, Grant County, Indiana)
+
+Team BitBusters: Emily Henry, Michael LaFleur, Nolan Lapp, Mohnik Rajakumar, Trey Shock
+
+Instructors: Dr. Awny Alnusair, Dr. Md Nour Hossain
+*/
+
+.breadcrumb { /* Dashboard breadcrumb navigation */
+    font-weight: bold;
+    margin-bottom: 0; /* Reduce or remove the bottom margin */
+}
+
+.breadcrumb-item.active { /* Dashboard breadcrumb navigation */
+    font-weight: bold;
+}
+
+.moon-icon-link {
+    color: #ffa16e; /* Match the color with your site theme */
+    font-size: 1.5rem;
+    display: flex; /* Use flex to center the content vertically */
+    align-items: center; /* Align vertically */
+    text-decoration: none; /* Remove underline from the link */
+    margin-bottom: 0; /* Reduce or remove the bottom margin */
+}
+
+hr {
+    margin-top: 0.5rem; /* Reduce the top margin to bring it closer */
+}
+
+/* Adjust padding to the left navigation bar */
+.d-flex.flex-column.flex-shrink-0.bg-light {
+    padding: 30px;
+}
+.nav.nav-pills {
+    margin-bottom: 0; /* Remove bottom margin from the nav list if it's causing extra space */
+}
+
+.dashnav-icon { /* Dashboard sidebar navigation */
+    width: 100% !important;
+}
+
+.dashnav-item {
+    padding: 10px 0;
+}
+
+.dashnav-link { /* Dashboard sidebar navigation */
+    color: white;
+    background-color: #ffa16e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px; /* Set a fixed height for consistency */
+    margin: 0; /* Ensure no margin is affecting the layout */
+    padding: 5px 0; /* Reduced padding to bring icons closer together */
+}
+
+.dashnav-link.active { /* Dashboard sidebar navigation */
+    color: black;
+    background-color: #ffa16e;
+}
+
+.dashnav-link.active > .dashnav-icon {
+    color: black; /* Or whatever color indicates an active state */
+    border-bottom: 3px solid black;
+}
+
+.dashnav-link > a:hover {
+    /* Dashboard sidebar navigation */
+    background-color: #ffff66 !important;
+}
+.dashnav-link .bi-calendar2-fill {
+    /* Ensures the calendar icon is white and not transparent */
+    color: white; /* Sets the icon color to white */
+}
+
+.btn-round {
+    background-color: #ffa16e; /* The orange color */
+    color: white; /* Text color */
+    border-radius: 20px; /* Adjust as needed for roundness */
+    padding: 10px 20px; /* Adjust as needed for size */
+    border: none; /* No border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a slight shadow for depth */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+}
+
+.btn-round:hover {
+    background-color: #e68a5c; /* A slightly darker orange on hover */
+}
+
+.gallery-title {
+    color: black; /* Sets the text color to black */
+    font-weight: bold; /* Makes text bold */
+    font-size: 2rem; /* Adjust the size as needed */
+    /* Add any additional styling required for the gallery title */
+}
+
+.btn-filter {
+    border: 2px solid #ffa16e; /* Orange border */
+    background-color: white; /* White background */
+    color: #ffa16e; /* Orange text */
+    padding: 10px 20px;
+    border-radius: 20px; /* Round edges */
+    cursor: pointer;
+    outline: none;
+    margin: 0 5px;
+    font-weight: bold; /* Add this line to make text bold */
+}
+
+.btn-filter:not(:hover):not(.active) {
+    color: black; /* Black text for non-hovered, non-active buttons */
+}
+
+.btn-filter:hover,
+.btn-filter.active {
+    background-color: #ffa16e; /* Orange background */
+    color: white; /* White text */
+}
+
+#gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* This will create a responsive grid layout */
+    grid-gap: 10px; /* Adjust the gap between items */
+    padding: 10px; /* Padding around the grid */
+    max-width: 1000px; /* Maximum width of the gallery */
+    margin: auto; /* Center the gallery */
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.column {
+    flex: 1;
+    max-width: calc(33.33% - 10px); /* Adjust the max-width for three images per row, minus margin */
+    margin: 5px; /* Half of the space you want between images */
+}
+
+.image-container {
+    border: 1px solid #ccc; /* Border color similar to screenshot */
+    padding: 10px; /* Padding inside the image containers */
+    text-align: center; /* Center the text inside the container */
+    background-color: #f9f9f9; /* Background color of the image container */
+    display: none; /* Keep this to hide images by default */
+}
+.image-container.show {
+    display: block; /* This will show the image containers */
+}
+.image-container img {
+    max-width: 100%; /* Ensure the image is fully contained within its element */
+    max-height: 150px; /* Maximum height of images */
+    width: auto; /* Maintain aspect ratio */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 5px; /* Space between the image and the text below it */
+}

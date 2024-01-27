@@ -1,0 +1,253 @@
+
+/*
+Indiana University Kokomo
+INFO-I 451: Design and Development of an Information System
+Spring Semester 2024
+
+Senior Capstone Project: First Light Child Advocacy Center (Marion, Grant County, Indiana)
+
+Team BitBusters: Emily Henry, Michael LaFleur, Nolan Lapp, Mohnik Rajakumar, Trey Shock
+
+Instructors: Dr. Awny Alnusair, Dr. Md Nour Hossain
+*/
+
+a:link {
+    text-decoration: none;                      /* No underline for unvisited links */
+}
+
+a:visited {
+  text-decoration: none;                        /* No underline for visited links */
+}
+
+a:hover {
+  text-decoration: none;                        /* No underline during hover */
+}
+
+a:active {
+  text-decoration: none;                        /* No underline when active */
+}
+
+.accordion-button:not(.collapsed) {             /* Overrides Bootstrap's accordion specs */
+  background-color: #F99659 !important;
+  box-shadow: none !important;
+  color: white !important;
+  font-weight: bold !important;
+  letter-spacing: 1px !important;
+}
+
+.breadcrumb {                                   /* Dashboard breadcrumb navigation */
+  font-weight: bold;
+}
+
+.breadcrumb-item.active {                       /* Dashboard breadcrumb navigation */
+  font-weight: bold;
+}
+
+.btn-danger {
+  background-color: #CC6666;                  /* Bootstrap btn-danger (red) */
+}
+
+.btn-light {
+  background-color: #FFA16E;                  /* Bootstrap btn-light */
+}
+
+.btn-success {
+  background-color: #598205;                  /* Bootstrap btn-success (green) */
+}
+
+.card {                                         /* Bootstrap card */
+  height: 100%;
+  margin-bottom: 20px !important;
+  margin-top: 20px !important;
+}
+
+.card-body {                                    /* Bootstrap card body */
+  padding: 30px;
+}
+
+.card-title {                                   /* Bootstrap card title */
+  font-weight: bold;
+  padding-bottom: 15px;
+}
+
+.dashnav-icon {                                 /* Dashboard sidebar navigation */
+  width: 100% !important;
+}
+
+.dashnav-item {                                 /* Dashboard sidebar navigation */
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.dashnav-link {                                 /* Dashboard sidebar navigation */
+  color: white;
+  background-color: #FFA16E;
+}
+
+.dashnav-link.active {                          /* Dashboard sidebar navigation */
+  color: black;
+  background-color: #FFA16E;
+}
+.dashnav-link.active > .dashnav-icon {
+  color: black; /* Or whatever color indicates an active state */
+  border-bottom: 3px solid black;
+}
+
+.dashnav-link > a:hover {                       /* Dashboard sidebar navigation */
+  background-color: #FFFF66 !important;
+}
+
+footer {
+  color: white;                               /* White text in footer */
+}
+
+footer a {
+  color: white;                               /* No blue text links in footer! */
+}
+
+.footer-title {
+  color: white;                               /* First Light */
+  font-weight: bold;                            /* H1 bold */
+}
+
+.form-alt-even {                                /* First Light forms (alt shading - even) */
+  background-color: antiquewhite;
+  border-bottom: 1px solid black;
+  padding: 30px 40px 40px 40px;
+}
+
+.form-alt-odd {                                 /* First Light forms (alt shading - odd) */
+  background-color: cornsilk;
+  border-bottom: 1px solid black;
+  padding: 30px 40px 40px 40px;
+}
+
+.form-check-label {
+  padding-top: 0px !important;                  /* Special handling for form checkboxes */
+}
+
+#header-title {
+  color: #FFA16E;                             /* First Light Child Advocacy Center */
+  font-weight: bold;                            /* H1 bold */
+}
+
+img {
+  height: auto;                                 /* Images resize when browser window resizes */
+  max-width: 100%;                              /* Images do not overflow divs */
+}
+
+input[type="date"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="tel"],
+input[type="text"],
+.form-select,
+textarea.form-control {
+  background-color: white;                    /* Form fields highlighting */
+  border-color: black;
+}
+
+input[type="date"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus,
+input[type="tel"]:focus,
+input[type="text"]:focus,
+textarea.form-control:focus {                   /* https://formden.com/blog/input-color */
+  background-color: #FFFF66;                  /* Form fields focus background color */
+  border: 3px solid #FFA16E;                  /* Form fields focus border color */
+  box-shadow: none;                             /* Remove Bootstrap's default blue glow */
+}
+
+.faq-A {
+	width: 50px;								/* Width for table row */
+	color: #BFBFBF;						   /* Changes text color */
+	font-weight: bold;							/* Makes text bold */
+	font-size: 40px;							/* Size of the font */
+}
+
+.faq-row {
+	background-color: #F3F3F3 !important;					/* changes row background color */
+}
+#faq-title {									
+	color: #6699CC; 							/* Changes text color */
+	font-weight: bold;							/* Makes text bold */
+}
+
+.faq-Q {
+	width: 50px;								/* Width for table row */
+	color: #FFCC99;						   /* Changes text color */
+	font-weight: bold;							/* Makes text bold */
+	font-size: 40px;							/* Size of the font */
+}
+
+.faq-q-text {
+	font-weight: bold;							/* Bolds text */
+}
+.form-select:focus {
+  border: 3px solid #FFA16E;                  /* Keep separate from others so list isn't neon yellow */
+  box-shadow: none;
+}
+
+.gallery-title {
+	color: #6699CC; 							/* Changes text color */
+	font-weight: bold;							/* Makes text bold */
+	text-align: center;							/* Center text */
+}
+
+.gallery-text {
+	text-align: center;							/* Center text */
+}
+
+label {
+  padding-top: 10px !important;                 /* Pads form labels (helps in stacked mobile view) */
+}
+
+li span {
+  position: relative;                           /* Placeholder to customize space after list bullets */
+  left: 0px;                                    /* Currently set to have no effect */
+}
+
+.main-title {
+  color: white;                               /* About Our Organization, Make the Change */
+  font-weight: bold;                            /* H1 bold */
+}
+
+.nav-link {
+  font-weight: normal;                          /* Placeholder */
+}
+
+.navbar-nav > a:hover {
+  background-color: #FFFF66;                  /* Nav bar links hover highlighter */
+}
+
+#reach-out-title {
+	color: #6699CC; 							/* Changes text color */
+	font-weight: bold;							/* Makes text bold */
+}
+
+.reach-out-box-text {
+	color: #FFFFFF;
+}
+
+table {                                         /* Dashboard tables */
+  box-shadow: 1px 1px 5px #999999;
+  width: 100%;
+}
+
+td {                                            /* Dashboard table columns */
+  border: 1px solid #CCCCCC;
+  padding: 10px;
+}
+
+th {                                            /* Dashboard table headers */
+  background-color: #FFCC99 !important;
+  border: 1px solid #CCCCCC;
+  font-weight: 500;
+  padding: 10px;
+}
+
+tr:nth-child(odd) {                             /* Alternating table row color */
+  background-color: lightgoldenrodyellow;
+}

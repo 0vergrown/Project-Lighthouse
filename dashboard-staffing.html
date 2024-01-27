@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang = "en">
+    <head>
+        <meta charset = "utf-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1">
+        <title>First Light CAC :: Dashboard</title>
+        <link href = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel = "stylesheet" integrity = "sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin = "anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+        <link href = "firstlight.css" rel = "stylesheet">
+        <script src = "https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    </head>
+
+    <!--
+    Indiana University Kokomo
+    INFO-I 451: Design and Development of an Information System
+    Spring Semester 2024
+
+    Senior Capstone Project: First Light Child Advocacy Center (Marion, Grant County, Indiana)
+
+    Team BitBusters: Emily Henry, Michael LaFleur, Nolan Lapp, Mohnik Rajakumar, Trey Shock
+
+    Instructors: Dr. Awny Alnusair, Dr. Md Nour Hossain
+    -->
+
+    <body>
+
+        <div class="container-fluid" style="margin-left: -12px !important;">
+            <div class="row">
+                <div class="col-xxl-1 col-xl-1 col-lg-2 col-md-2 col-sm-3 col-3">
+                    <nav>
+                        <!-- https://getbootstrap.com/docs/5.0/examples/sidebars/ (right click, view page source)-->
+                        <!-- https://stackoverflow.com/questions/71598493/how-to-adjust-size-of-bootstrap-icons-from-html-code -->
+            
+                        <div class="d-flex flex-column flex-shrink-0 bg-light" style="background-color: #FFA16E !important; height: 100vh; width: 5.5rem;">
+                            <a href="index.html" target="_blank"><img src="images/fl-logo.png" alt="First Light Child Advocacy Center" style="padding: 20px 10px 40px 10px;"></a>
+            
+                            <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
+                                <li class="dashnav-item nav-item">
+                                    <a href="dashboard-home.html" class="dashnav-link py-3" aria-current="page" title="Home" data-bs-toggle="tooltip" data-bs-placement="right">
+                                        <i class="dashnav-icon bi bi-house-door-fill h2"></i>
+                                    </a>
+                                </li>
+                                <li class="dashnav-item nav-item">
+                                    <a href="dashboard-events.html" class="dashnav-link py-3" title="Events" data-bs-toggle="tooltip" data-bs-placement="right">
+                                        <i class="dashnav-icon bi bi-calendar-event h2"></i>
+                                    </a>
+                                </li>
+                                <li class="dashnav-item nav-item">
+                                    <a href="dashboard-staffing.html" class="dashnav-link active py-3" title="Staffing" data-bs-toggle="tooltip" data-bs-placement="right">
+                                        <i class="dashnav-icon bi bi-people-fill h2"></i>
+                                    </a>
+                                </li>
+                                <li class="dashnav-item nav-item">
+                                    <a href="dashboard-donors.html" class="dashnav-link py-3" title="Donors" data-bs-toggle="tooltip" data-bs-placement="right">
+                                        <i class="dashnav-icon bi bi-piggy-bank-fill h2"></i>
+                                    </a>
+                                </li>
+                                <li class="dashnav-item nav-item">
+                                    <a href="dashboard-gallery.html" class="dashnav-link py-3" title="Gallery" data-bs-toggle="tooltip" data-bs-placement="right">
+                                        <i class="dashnav-icon bi bi-images h2"></i>
+                                    </a>
+                                </li>
+                                <li class="dashnav-item nav-item">
+                                    <a href="dashboard-settings.html" class="dashnav-link py-3" title="Settings" data-bs-toggle="tooltip" data-bs-placement="right">
+                                        <i class="dashnav-icon bi bi-gear-fill h2"></i>
+                                    </a>
+                                </li>
+                                <li class="dashnav-item nav-item">
+                                    <a href="dashboard-logout.html" class="dashnav-link py-3" title="Log Out" data-bs-toggle="tooltip" data-bs-placement="right">
+                                        <i class="dashnav-icon bi bi-box-arrow-right h2"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>            
+                </div>
+
+                <div class="col-xxl-11 col-xl-11 col-lg-10 col-md-10 col-sm-9 col-9" style="padding: 20px;">
+                    <!-- https://getbootstrap.com/docs/5.3/components/breadcrumb/ -->
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="dashboard-home.html">Dashboard</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Staffing</li>
+                        </ol>
+                    </nav>
+
+                    <hr>
+
+                    <!--
+                    *******************************************************************************
+                    MAIN
+                    *******************************************************************************
+                    -->
+
+                    <main>
+                        <!-- ########## PAGE CONTENT GOES HERE ########## -->
+
+                        <!-- https://getbootstrap.com/docs/5.3/components/card/ -->
+                        <!-- https://getbootstrap.com/docs/5.3/forms/checks-radios/ -->
+
+                        <div class="container-fluid" style="margin-left: -12px !important;">
+                            <div class="row" style="padding-bottom: 50px;">
+                                <div class="col">
+                                    <h2 style="font-weight: bold;">Welcome, Director!</h2>
+                                </div>
+                            </div>
+
+                            <div class="row" style="overflow-x: auto; overflow-y: hidden;">
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Interns</h5>
+                                            <table>
+                                                <tr>
+                                                    <th>Contact Name</th>
+                                                    <th>Email Address</th>
+                                                    <th>Phone Number</th>
+                                                    <th colspan="2">Application Form</th>
+                                                    <th style="text-align: center;"><a href=""><button type="button" class="btn btn-success w-100">Add</button></a></th>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Bob Jones</td>
+                                                    <td>bobbiejones@outlook.com</td>
+                                                    <td>555-5555</td>
+                                                    <td><a href="dashboard-staffing-edit-view.html">View</a></td>
+                                                    <td><a href="dashboard-staffing-edit-view.html">Edit</a></td>
+                                                    <td style="text-align: center;"><a href=""><button type="button" class="btn btn-danger w-100">Delete</button></a></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Jenny Jenkins</td>
+                                                    <td>jj20@gmail.com</td>
+                                                    <td>867-5309</td>
+                                                    <td><a href="dashboard-staffing-edit-view.html">View</a></td>
+                                                    <td><a href="dashboard-staffing-edit-view.html">Edit</a></td>
+                                                    <td style="text-align: center;"><a href=""><button type="button" class="btn btn-danger w-100">Delete</button></a></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p>&nbsp;</p>
+
+                            <div class="row" style="overflow-x: auto; overflow-y: hidden;">
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Volunteers</h5>
+                                            <table>
+                                                <tr>
+                                                    <th>Contact Name</th>
+                                                    <th>Email Address</th>
+                                                    <th>Phone Number</th>
+                                                    <th colspan="2">Application Form</th>
+                                                    <th style="text-align: center;"><a href=""><button type="button" class="btn btn-success w-100">Add</button></a></th>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Bob Jones</td>
+                                                    <td>bobbiejones@outlook.com</td>
+                                                    <td>555-5555</td>
+                                                    <td><a href="dashboard-staffing-edit-view.html">View</a></td>
+                                                    <td><a href="dashboard-staffing-edit-view.html">Edit</a></td>
+                                                    <td style="text-align: center;"><a href=""><button type="button" class="btn btn-danger w-100">Delete</button></a></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Jenny Jenkins</td>
+                                                    <td>jj20@gmail.com</td>
+                                                    <td>867-5309</td>
+                                                    <td><a href="dashboard-staffing-edit-view.html">View</a></td>
+                                                    <td><a href="dashboard-staffing-edit-view.html">Edit</a></td>
+                                                    <td style="text-align: center;"><a href=""><button type="button" class="btn btn-danger w-100">Delete</button></a></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <p>&nbsp;</p>
+
+                        </div>
+
+                    </main>
+                </div>
+            </div>
+        </div>
+
+        <!--
+        *******************************************************************************
+        JAVASCRIPT
+        *******************************************************************************
+        -->
+        
+        <script src = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity = "sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin = "anonymous"></script>
+        
+    </body>
+</html>

@@ -1,0 +1,127 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+.brand {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: #ffa16e;
+    font-weight: bold;
+}
+.container {
+    display: flex;
+    height: 100vh; /* Ensure the container takes full viewport height */
+    width: 100vw; /* Ensure the container takes full viewport width */
+}
+.text-container {
+    width: 100%; /* Match the width of the input fields */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the text-container */
+    margin-bottom: 20px; /* Adjust the margin to space it correctly above the username */
+}
+.welcome-back {
+    font-size: 40px;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: bold;
+    color: #F99659;
+}
+.login-section {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Change this to center to align items vertically in the center */
+    align-items: center;
+    padding: 1rem;
+}
+.login-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+}
+.login-form .input-group {
+    position: relative;
+}
+.input-group {
+    width: 100%; /* This ensures the input takes the full width of its container */
+    max-width: 400px; /* You can adjust this value to match the design */
+    margin-top: 0; /* Removes additional space at the top if any */
+    margin-bottom: 1rem; /* Space between inputs */
+    position: relative;
+}
+
+.input-group label {
+    position: static;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+.input-group label[for="username"] {
+    font-family: 'Segoe UI', sans-serif; /* Set the font to Segoe UI */
+    font-size: 20px; /* Set font size to 20px */
+    font-weight: normal; /* Set font weight to normal, which is equivalent to 'regular' */
+    color: #000; /* Assuming you want the label to be standard black */
+    margin-bottom: 0.5rem; /* Space between label and input */
+}
+
+.input-group input[type="text"]#username, .input-group input[type="password"]#password {
+    border: 1px solid #FCC981; /* Border color as specified */
+    background-color: #F0F0F0; /* Background fill color */
+    color: #D3D3D3; /* Placeholder text color */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Drop shadow as described */
+}
+
+/* Placeholder style */
+.input-group input[type="text"]#username::placeholder {
+    color: #D3D3D3; /* Placeholder text color */
+}
+
+.input-group input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sign-in-btn {
+    background-color: #FCC981; /* The yellowish color */
+    color: white;
+    border: none;
+    padding: 0.75rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 1rem; /* Space above the button */
+    font-size: 1rem;
+    font-weight: bold;
+    position: static;
+}
+
+/* Optional: Add styles for hover state */
+.sign-in-btn:hover {
+    background-color: darken(#ffa16e, 10%); /* This requires a pre-processor like SASS. Use equivalent CSS if not using SASS */
+}
+.image-section {
+    width: 50vw; /* Set the image section to take up 50% of the viewport width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-section img {
+    max-width: 100%; /* Allow the image to fill the container */
+    max-height: 100vh; /* Limit the image height to not exceed the viewport height */
+    object-fit: cover; /* Cover will ensure that the image covers the div without stretching */
+}
+

@@ -27,11 +27,25 @@ Instructors: Dr. Awny Alnusair, Dr. Md Nour Hossain
     text-decoration: none; /* Remove underline from the link */
     margin-bottom: 0; /* Reduce or remove the bottom margin */
 }
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
 
 hr {
     margin-top: 0.5rem; /* Reduce the top margin to bring it closer */
 }
-
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 /* Adjust padding to the left navigation bar */
 .d-flex.flex-column.flex-shrink-0.bg-light {
     padding: 30px;
@@ -73,8 +87,7 @@ hr {
     /* Dashboard sidebar navigation */
     background-color: #ffff66 !important;
 }
-.dashnav-link .bi-calendar2-fill {
-    /* Ensures the calendar icon is white and not transparent */
+.dashnav-link .bi-calendar2-fill { /* Ensures the calendar icon is white and not transparent */
     color: white; /* Sets the icon color to white */
 }
 
@@ -96,7 +109,6 @@ hr {
     color: black; /* Sets the text color to black */
     font-weight: bold; /* Makes text bold */
     font-size: 2rem; /* Adjust the size as needed */
-    /* Add any additional styling required for the gallery title */
 }
 
 .btn-filter {
@@ -121,41 +133,28 @@ hr {
     color: white; /* White text */
 }
 
-#gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* This will create a responsive grid layout */
-    grid-gap: 10px; /* Adjust the gap between items */
-    padding: 10px; /* Padding around the grid */
-    max-width: 1000px; /* Maximum width of the gallery */
-    margin: auto; /* Center the gallery */
-}
-
-.row {
+.gallery {
+    width: 100%;
     display: flex;
+    justify-content: center;
+    align-items: stretch;
     flex-wrap: wrap;
-    justify-content: space-around;
+    gap: 20px;
 }
 
-.column {
-    flex: 1;
-    max-width: calc(33.33% - 10px); /* Adjust the max-width for three images per row, minus margin */
-    margin: 5px; /* Half of the space you want between images */
-}
-
-.image-container {
-    border: 1px solid #ccc; /* Border color similar to screenshot */
+.gallery .image-container {
+    border: 1px solid #ffa16e;
     padding: 10px; /* Padding inside the image containers */
     text-align: center; /* Center the text inside the container */
-    background-color: #f9f9f9; /* Background color of the image container */
     display: none; /* Keep this to hide images by default */
+    width: 29%;
 }
-.image-container.show {
+.gallery .image-container.show {
     display: block; /* This will show the image containers */
 }
-.image-container img {
+.gallery .image-container img {
     max-width: 100%; /* Ensure the image is fully contained within its element */
-    max-height: 150px; /* Maximum height of images */
+    max-height: 200px; /* Maximum height of images */
     width: auto; /* Maintain aspect ratio */
     height: auto; /* Maintain aspect ratio */
-    margin-bottom: 5px; /* Space between the image and the text below it */
 }

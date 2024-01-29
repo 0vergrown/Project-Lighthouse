@@ -1,0 +1,209 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+}
+
+.logo-container, .nav-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 200px;
+    width: 150px;
+}
+
+.logo-text {
+    color: #F99659;
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 40px; /* Updated font size */
+    font-weight: bold; /* Make text bold */
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.logo-text:hover {
+    color: #7798CD;
+}
+
+.donate-button {
+    background-color: #F99659;
+    border: none;
+    width: 200px; /* Set the width to 219px */
+    height: 50px; /* Set the height to 59px */
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.donate-button:hover {
+    background-color: #7798CD;
+}
+
+.sign-in-text {
+    color: #F99659;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 20px; /* Set font size to 20 */
+    font-weight: bold; /* Set font weight to bold */
+    font-family: 'Segoe UI', sans-serif; /* Ensure font family is Segoe UI */
+}
+
+.sign-in-text:hover {
+    color: #7798CD;
+}
+
+/* Adjust the alignment of the button and text on the right */
+.nav-container {
+    align-self: flex-start;
+    padding-top: 140px;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #707070;
+    background-color: #fff;
+    padding: 10px 20px;
+}
+
+.nav-left, .nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    color: #000;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Segoe UI', sans-serif;
+    margin-right: 20px; /* Adjust as needed for spacing */
+    padding: 5px 10px; /* Add padding for a better box effect */
+}
+.nav-link:hover {
+    color: #7798CD;
+}
+.nav-home:hover {
+    background-color: #F99659;
+    color: #fff;
+}
+
+.nav-about:hover {
+    background-color: #F5DD68;
+    color: #fff;
+}
+
+.nav-events:hover {
+    background-color: #ADE47A;
+    color: #fff;
+}
+
+.nav-join:hover {
+    background-color: #7798CD;
+    color: #fff;
+}
+
+.nav-donate:hover {
+    background-color: #F99659;
+    color: #fff;
+}
+
+.nav-gallery:hover {
+    background-color: #F5DD68;
+    color: #fff;
+}
+.nav-faq:hover {
+    background-color: #ADE47A;
+    color: #fff;
+}
+.nav-reach:hover {
+    background-color: #7798CD;
+    color: #fff;
+}
+
+.facebook-icon {
+    color: #F99659; /* Set the icon color */
+    font-size: 50px;
+}
+
+.facebook-icon:hover {
+    color: #7798CD; /* Color on hover */
+}
+
+footer {
+    background-color: #F99659;
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+footer li::before {
+    content: '■ '; /* Unicode for a small square */
+    color: white; /* or any color you prefer */
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer h2 {
+    font-weight: bold;
+}
+
+footer p {
+    color: white;
+}
+
+footer .bi {
+    font-size: 1.5rem; /* Adjust the size as needed */
+    vertical-align: middle; /* Align icon with text */
+}
+
+/* Specific styles for the icons */
+.bi-facebook {
+    font-size: 2rem; /* Adjust the size as needed */
+}
+
+.bi-telephone-fill, .bi-envelope-fill, .bi-geo-alt-fill {
+    font-size: 1.2rem; /* Adjust the size as needed */
+    margin-right: 8px; /* Space between icon and text */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    footer {
+        display: block;
+        text-align: center;
+    }
+    footer div {
+        margin-bottom: 20px;
+        padding: 0;
+        border: none;
+    }
+}
+
+/* Highlight the Donate link */
+footer ul li:nth-child(5) {
+    font-weight: bold;
+    text-decoration: underline;
+}

@@ -1,6 +1,9 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    padding-left: 100px; /* Adjust as needed */
+    padding-right: 100px; /* Adjust as needed */
+
 }
 
 header {
@@ -38,7 +41,7 @@ header {
     background-color: #F99659;
     border: none;
     width: 200px; /* Set the width to 219px */
-    height: 50px; /* Set the height to 59px */
+    height: 50px; /* Set the height to 59px */ 
     border-radius: 50px;
     color: #fff;
     cursor: pointer;
@@ -136,7 +139,6 @@ header {
 
 .facebook-icon {
     color: #F99659; /* Set the icon color */
-    font-size: 50px;
 }
 
 .facebook-icon:hover {
@@ -181,7 +183,7 @@ footer .bi {
 
 /* Specific styles for the icons */
 .bi-facebook {
-    font-size: 2rem; /* Adjust the size as needed */
+    font-size: 50px; /* Adjust the size as needed */
 }
 
 .bi-telephone-fill, .bi-envelope-fill, .bi-geo-alt-fill {

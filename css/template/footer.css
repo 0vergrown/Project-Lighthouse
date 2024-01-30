@@ -1,6 +1,6 @@
 footer {
     font-family: "Segoe UI", sans-serif;
-    background-color: #F99659;
+    background-color: #f99659;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -33,6 +33,12 @@ footer .column.a {
 footer .column.a.contact {
     flex-direction: column;
     text-align: center;
+}
+footer .column.a.contact a {
+    display: inline-flex;
+    align-items: center;
+    color: white; /* Default text color */
+    gap: 8px; /* Adjusts space between the icon and text */
 }
 
 footer .column.a.contact svg {
@@ -113,4 +119,54 @@ footer ul li.underline-bold {
 
 footer ul li {
     width: 50%;
+}
+
+/* Hover effect for Home */
+footer a[href="index.html"]:hover {
+    color: #000000;
+}
+
+/* Hover effect for Donate text with underline color change */
+footer a[href="donate.html"]:hover {
+    color: #000000; /* Text color */
+    text-decoration: underline;
+    text-decoration-color: #000000; /* Underline color */
+}
+
+/* Hover effect for About and Gallery */
+footer a[href="about.html"]:hover,
+footer a[href="gallery.html"]:hover {
+    color: #f5dd68;
+}
+
+/* Hover effect for Events and FAQ */
+footer a[href="events.html"]:hover,
+footer a[href="faq.html"]:hover {
+    color: #ade47a;
+}
+
+/* Hover effect for Join Us and Reach Out */
+footer a[href="volunteer.html"]:hover,
+footer a[href="reach-out.html"]:hover {
+    color: #7798cd;
+}
+
+/* Hover effect for Facebook icon */
+footer a[href*="www.facebook.com"]:hover svg {
+    fill: #7798cd; /* Change SVG fill color on hover */
+}
+
+/* Hover effect for phone number */
+footer .column.a.contact a[href*="tel:"]:hover {
+    color: #ade47a;
+}
+
+/* Hover effect for email address */
+footer .column.a.contact a[href*="mailto:"]:hover {
+    color: #7798cd;
+}
+
+/* Hover effect for physical address */
+footer .column.contact a:last-child:hover {
+    color: #f5dd68;
 }

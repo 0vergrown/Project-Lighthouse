@@ -10,12 +10,14 @@ Team BitBusters: Emily Henry, Michael LaFleur, Nolan Lapp, Mohnik Rajakumar, Tre
 Instructors: Dr. Awny Alnusair, Dr. Md Nour Hossain
 */
 
-.breadcrumb { /* Dashboard breadcrumb navigation */
+.breadcrumb {
+    /* Dashboard breadcrumb navigation */
     font-weight: bold;
     margin-bottom: 0; /* Reduce or remove the bottom margin */
 }
 
-.breadcrumb-item.active { /* Dashboard breadcrumb navigation */
+.breadcrumb-item.active {
+    /* Dashboard breadcrumb navigation */
     font-weight: bold;
 }
 
@@ -46,15 +48,30 @@ hr {
     flex-wrap: wrap;
     justify-content: space-around;
 }
-/* Adjust padding to the left navigation bar */
+/* Left Navigation Bar */
 .d-flex.flex-column.flex-shrink-0.bg-light {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 5.5rem; /* Adjust based on your actual sidebar width */
+    overflow-x: hidden;
+    overflow-y: auto; /* Allows scrolling within the navbar if it exceeds the viewport height */
+    background-color: #ffa16e !important; /* Your existing background color */
+    z-index: 100; /* Ensures the sidebar is above other content */
     padding: 30px;
 }
+.col-xxl-11.col-xl-11.col-lg-10.col-md-10.col-sm-9.col-9 {
+    margin-left: 5.5rem; /* Match the sidebar width */
+    padding: 20px;
+}
+
 .nav.nav-pills {
     margin-bottom: 0; /* Remove bottom margin from the nav list if it's causing extra space */
 }
 
-.dashnav-icon { /* Dashboard sidebar navigation */
+.dashnav-icon {
+    /* Dashboard sidebar navigation */
     width: 100% !important;
 }
 
@@ -62,7 +79,8 @@ hr {
     padding: 10px 0;
 }
 
-.dashnav-link { /* Dashboard sidebar navigation */
+.dashnav-link {
+    /* Dashboard sidebar navigation */
     color: white;
     background-color: #ffa16e;
     display: flex;
@@ -73,7 +91,8 @@ hr {
     padding: 5px 0; /* Reduced padding to bring icons closer together */
 }
 
-.dashnav-link.active { /* Dashboard sidebar navigation */
+.dashnav-link.active {
+    /* Dashboard sidebar navigation */
     color: black;
     background-color: #ffa16e;
 }
@@ -87,7 +106,8 @@ hr {
     /* Dashboard sidebar navigation */
     background-color: #ffff66 !important;
 }
-.dashnav-link .bi-calendar2-fill { /* Ensures the calendar icon is white and not transparent */
+.dashnav-link .bi-calendar2-fill {
+    /* Ensures the calendar icon is white and not transparent */
     color: white; /* Sets the icon color to white */
 }
 

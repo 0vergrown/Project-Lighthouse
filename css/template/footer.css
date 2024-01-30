@@ -1,0 +1,116 @@
+footer {
+    font-family: "Segoe UI", sans-serif;
+    background-color: #F99659;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+    padding: 15px 0;
+    min-height: 250px;
+}
+
+footer .column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90%;
+}
+
+footer .column.right-border {
+    border-right: 1.5px solid white;
+    padding-right: 25px;
+}
+
+footer .column.left-border {
+    border-left: 1.5px solid white;
+    padding-left: 25px;
+}
+
+footer .column.a {
+    width: 25%;
+}
+
+footer .column.a.contact {
+    flex-direction: column;
+    text-align: center;
+}
+
+footer .column.a.contact svg {
+    width: 16px;
+    height: 16px;
+    fill: white;
+    margin-right: 5px;
+}
+
+footer .column.a.contact h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: white;
+}
+
+footer .column.a.contact a {
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+footer .column.b {
+    width: 33%;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+
+footer .column.b h2 {
+    margin-bottom: 5px;
+    font-size: 24px;
+}
+
+footer .column.b h3 {
+    margin-top: 5px;
+    font-size: 15px;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+footer .column.b p {
+    font-size: 15px;
+    margin-bottom: 15px;
+    max-width: 240px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    list-style: square;
+    color: white;
+}
+
+footer ul li {
+    padding: 2px 0;
+    font-size: 20px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+
+footer ul li.underline-bold {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+footer ul li {
+    width: 50%;
+}

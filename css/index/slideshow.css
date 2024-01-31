@@ -1,0 +1,46 @@
+/* Slideshow container */
+.slideshow-container {
+    max-width: 100%; /* Use 100% to ensure it fits the screen width */
+    margin: auto;
+    padding: 0 100px; /* Same padding as body for consistent alignment */
+    box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+.mySlides img {
+    width: calc(100% + 200px); /* Counteract the padding by increasing width */
+    max-width: none; /* Override any max-width properties */
+    margin-left: -100px; /* Offset the padding */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove any extra space below the image */
+}
+
+/* Fade in animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .slideshow-container {
+        padding: 0 50px; /* Adjust padding for smaller screens */
+    }
+
+    .mySlides img {
+        width: calc(100% + 100px); /* Adjust width for smaller screens */
+        margin-left: -50px; /* Adjust margin for smaller screens */
+    }
+}

@@ -1,0 +1,86 @@
+.about-section {
+    display: flex;
+    align-items: center;
+    background-color: #f99659;
+    padding: 50px;
+    position: relative;
+}
+
+.about-section-image {
+    flex: 0 0 calc(50% - 10px); /* Reduce width slightly to create space for the white line */
+    background-size: cover;
+    background-position: center;
+    padding-top: 30%; /* This will depend on the aspect ratio of your image */
+}
+.about-section-content {
+    flex: 1;
+    padding-left: 50px; /* Adjust this value for spacing between image and text */
+    color: white;
+    max-width: 50%; /* Ensures content does not exceed half the parent width */
+    align-self: flex-start; /* Align the content with the top */
+    padding-top: 0; /* Adjust padding-top to fine-tune the alignment with the white line */
+}
+.about-section-content h2 {
+    font-size: 55px; /* Set the font size for 'About Our' */
+    font-weight: bold;
+    line-height: 1.2; /* Adjust line height for better readability */
+    margin-bottom: 0; /* Remove bottom margin if you want 'Organization' to be closer under 'About Our' */
+}
+.about-section-content h2 strong {
+    display: block; /* Makes 'Organization' start on a new line */
+}
+.about-section-content p {
+    font-size: 25px; /* Set the font size for the paragraph text */
+    margin-top: 20px; /* Adds space between the title and paragraph */
+}
+
+.about-section h2 {
+    font-weight: bold;
+}
+
+.about-section p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.read-more-btn {
+    border: 3px solid white;
+    border-radius: 20px;
+    font-size: 16px;
+    padding: 5px 15px;
+    background-color: #f99659;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.read-more-btn:hover {
+    background-color: white;
+    color: #F99659;
+}
+
+/* White Line Separator */
+.about-section::before {
+    content: "";
+    position: absolute;
+    left: calc(50% + 10px); /* Move the line to the right to create space between it and the image */
+    top: 50%;
+    transform: translateY(-50%);
+    height: 75%; /* Adjust this value to control the height of the white line */
+    border-left: 2px solid white;
+
+    @media (max-width: 768px) {
+        .about-section {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .about-section-image {
+            width: 100%;
+            padding-top: 56.25%; /* 16:9 aspect ratio */
+        }
+
+        .about-section::before {
+            content: none;
+        }
+    }
+}

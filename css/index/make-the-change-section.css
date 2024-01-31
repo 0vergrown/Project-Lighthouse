@@ -1,0 +1,51 @@
+.make-the-change-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px; /* This adds space between each element */
+    padding: 20px 0; /* Padding to ensure there's space around the entire section */
+}
+
+.make-the-change-image img {
+    max-width: 494px; /* Maximum width as per your original image size */
+    max-height: 379px; /* Maximum height to match the images */
+    width: 100%; /* Ensure it scales down on smaller screens */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.make-the-change-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Aligns text vertically */
+    align-items: center; /* Aligns text horizontally */
+    background-color: #F99659;
+    width: 494px; /* Width to match images */
+    height: 379px; /* Height to match images */
+    color: white; /* Text color */
+    box-sizing: border-box; /* Include padding and border in the box's width */
+}
+
+.make-the-change-box h2 {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0; /* Removes default margin */
+}
+
+.join-us-button {
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: 3px solid white;
+    background-color: transparent;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 15px;
+    text-decoration: none; /* Added to remove underline */
+}
+
+.join-us-button:hover {
+    background-color: white;
+    color: #F99659;
+}

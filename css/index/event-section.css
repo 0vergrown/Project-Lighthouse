@@ -1,0 +1,183 @@
+.events-section {
+    padding-bottom: 100px;
+}
+
+.events-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+/* Adjust the top margin of the first events-divider */
+.events-header + .events-divider {
+    margin-top: -20px; /* Reduce space above the first divider */
+}
+
+.events-title {
+    font-size: 40px;
+    font-weight: bold;
+    color: #7798cd;
+}
+
+.see-more-button {
+    position: relative;
+    top: 10px;
+    background-color: white;
+    border: 2px solid #ade47a;
+    border-radius: 20px;
+    padding: 5px 15px;
+    color: #ade47a;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.3s ease; /* Optional: For smooth transition effects */
+}
+
+.see-more-button:hover {
+    background-color: #ade47a;
+    color: white;
+}
+
+.events-divider {
+    border: none;
+    height: 1px;
+    background-color: #7798cd;
+    margin: 15px 0;
+}
+
+.event-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: opacity 0.3s ease;
+}
+.event-item .hover-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center; /* Keeps it vertically centered */
+    justify-content: flex-start; /* Aligns content to the left */
+    font-size: 35px; /* Adjust as necessary */
+    padding-left: 15px; /* Add padding to match the original content alignment */
+    opacity: 0; /* Start as invisible */
+    transition: opacity 0.3s ease;
+    pointer-events: none; /* Ensures click events pass through */
+    color: transparent; /* Start with transparent color */
+    transition: opacity 0.3s ease;
+}
+/* On hover, fade out the contents except the button */
+.event-item:hover .date-and-day,
+.event-item:hover .event-details {
+    opacity: 0;
+}
+
+.event-item:hover .hover-content {
+    opacity: 1; /* Make visible on hover */
+    color: #ade47a;
+}
+
+/* Specific color for the second event */
+.event-item:nth-of-type(2):hover .hover-content {
+    color: #f5dd68;
+}
+
+/* Ensure the learn more button doesn't fade out */
+.yellow-learn-more-button,
+.green-learn-more-button {
+    position: relative;
+    z-index: 2; /* Higher than the hover-content */
+}
+
+.date-and-day {
+    display: flex;
+    margin-right: 15px;
+    align-items: flex-end;
+}
+
+.date-day {
+    font-size: 35px;
+    color: black;
+    padding-right: 5px; /* Reduced space between "09" and "Day Mon" */
+}
+
+.day-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5px; /* Reduced space between "09" and "Day Mon" */
+}
+
+.day-text {
+    font-size: 18px;
+    color: #f99659;
+    padding-bottom: 2px; /* Reduced space between "Day" and "Mon" */
+}
+
+.day-mon {
+    font-size: 18px;
+    color: black;
+}
+
+.event-details {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.event-name {
+    font-size: 35px;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: baseline;
+    margin-right: 5px;
+}
+
+.slash {
+    font-weight: bold;
+    align-self: center;
+    margin: 0 5px;
+}
+
+.event-address {
+    font-size: 18px;
+    font-weight: normal;
+    align-self: auto;
+}
+
+.yellow-learn-more-button {
+    background-color: #f5dd68;
+    border: 2px solid #f5dd68;
+    padding: 8px 10px; /* Adjusted padding */
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 14px; /* Adjusted font size */
+    transition: all 0.3s ease; /* Optional: For smooth transition effects */
+}
+.yellow-learn-more-button:hover {
+    background-color: white;
+    color: #f5dd68;
+    border: 2px solid #f5dd68;
+}
+
+.green-learn-more-button {
+    background-color: #ade47a;
+    border: 2px solid #ade47a;
+    padding: 8px 10px; /* Adjusted padding */
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 14px; /* Adjusted font size */
+    transition: all 0.3s ease; /* Optional: For smooth transition effects */
+}
+.green-learn-more-button:hover {
+    background-color: white;
+    color: #ade47a;
+    border: 2px solid #ade47a;
+}

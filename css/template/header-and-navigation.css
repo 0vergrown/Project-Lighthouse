@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Segoe UI", sans-serif;
     padding-left: 100px; /* Adjust as needed */
     padding-right: 100px; /* Adjust as needed */
 }
@@ -30,14 +30,14 @@ header {
     margin-left: 10px;
     font-size: 40px; /* Updated font size */
     font-weight: bold; /* Make text bold */
-    font-family: "Segoe UI", sans-serif;
+    transition: all 0.3s ease; /* Optional: For smooth transition effects */
 }
 
 .logo-text:hover {
     color: #7798cd;
 }
 
-.donate-button {
+.donate-now-button {
     background-color: #f99659;
     border: none;
     width: 200px; /* Set the width to 219px */
@@ -49,9 +49,10 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.3s ease; /* Optional: For smooth transition effects */
 }
 
-.donate-button:hover {
+.donate-now-button:hover {
     background-color: #7798cd;
 }
 
@@ -61,7 +62,7 @@ header {
     margin-left: 20px;
     font-size: 20px; /* Set font size to 20 */
     font-weight: bold; /* Set font weight to bold */
-    font-family: "Segoe UI", sans-serif; /* Ensure font family is Segoe UI */
+    transition: all 0.3s ease; /* Optional: For smooth transition effects */
 }
 
 .sign-in-text:hover {
@@ -93,9 +94,16 @@ header {
     color: #000;
     text-decoration: none;
     font-size: 30px;
-    font-family: "Segoe UI", sans-serif;
     margin-right: 20px; /* Adjust as needed for spacing */
     padding: 5px 10px; /* Add padding for a better box effect */
+    transition: all 0.3s ease; /* Optional: For smooth transition effects */
+}
+.nav-link.active {
+    color: #F88037 !important; /* Active link color */
+}
+
+.nav-link.active:hover {
+    color: #fff !important; /* White color on hover for the active link */
 }
 .nav-link:hover {
     color: #7798cd;

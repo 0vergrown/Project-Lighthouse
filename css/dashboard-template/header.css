@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", sans-serif;
+    display: flex;
+}
+
+.content {
+    flex-grow: 1; /* Ensures that .content takes up the remaining space */
+    display: flex;
+    flex-direction: column; /* Stack header and welcome text vertically */
+}
+
+.header {
+    color: #707070;
+    padding: 20px;
+    padding-left: 20px;
+    display: flex; /* Enables flexbox layout */
+    justify-content: space-between; /* Positions items on opposite ends */
+    align-items: center; /* Align items vertically */
+    box-sizing: border-box;
+}
+
+.header-moon {
+    color: #f99659; /* Moon icon color */
+    font-size: 1.5rem; /* Adjust icon size as needed */
+}
+
+.header-line {
+    background-color: #d3d3d3;
+    height: 1px;
+    width: 100%; /* Ensures the line is only as wide as its container */
+    margin: 0; /* Removes any default margin */
+}
+
+.welcome-text {
+    color: #000000;
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding: 20px;
+}

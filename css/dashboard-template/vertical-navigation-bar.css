@@ -1,0 +1,33 @@
+.navigation-bar {
+    background-color: #f99659;
+    width: 80px; /* Increase the width from 60px to 80px */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px; /* Adjust if needed to maintain visual appeal */
+}
+
+.navigation-bar i,
+.navigation-bar a {
+    color: white;
+    margin: 7px 0; /* Reduced margin for closer icons */
+    font-size: 30px; /* Keeps the increased icon size */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Ensure the link occupies the full width for consistent click area */
+    text-decoration: none;
+    transition: all 0.3s ease; /* Optional: For smooth transition effects */
+}
+
+.navigation-bar i:hover,
+.navigation-bar a:hover {
+    color: black; /* Icon color on hover */
+}
+.nav-link {
+    color: white; /* Ensures the link is white */
+    text-decoration: none; /* Removes underline from links */
+    display: flex; /* To align the icon properly */
+    justify-content: center; /* Center horizontally */
+}

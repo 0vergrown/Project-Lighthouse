@@ -1,0 +1,121 @@
+.ways-to-give-section {
+    display: flex;
+    justify-content: space-between; /* Changed to space-between to use available space */
+    align-items: flex-start; /* Align items to the top */
+    margin-top: 50px;
+}
+
+.ways-to-give-container {
+    background-color: #f99659;
+    color: white;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 65%;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-bottom: 5%;
+}
+
+.ways-to-give-container h2 {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.ways-to-give-container p {
+    margin: 10px auto 10px; /* Reduced margin to bring text closer */
+    text-align: left;
+    font-size: 20px; /* Adjusted font size for the descriptive text, slightly smaller */
+    font-weight: normal; /* Regular font weight */
+    max-width: 500px; /* Fixed maximum width to constrain the paragraph */
+    line-height: 1.6; /* Adjust line height for better readability */
+}
+
+.ways-to-give-options {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin-top: 10px; /* Reduced margin to bring options closer to the text */
+}
+
+.option {
+    margin-top: 10px;
+    background-color: #f99659;
+    border: 1px solid white;
+    color: white;
+    padding: 20px;
+    flex: 1; /* Allow options to grow equally */
+    margin: 0 0px; /* Add horizontal margin between options */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-sizing: border-box; /* Include padding and border in the width and height */
+    padding-bottom: 15%;
+}
+
+.option .icon {
+    display: none; /* Hide any additional "+" icons */
+}
+
+.option h3 {
+    font-size: 18px;
+    margin: 5px 0;
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+.option h3:before {
+    content: "+\00a0"; /* The unicode for "+" and a non-breaking space */
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin-right: 8px;
+}
+
+.option p {
+    font-size: 16px;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.image-donate-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 402px;
+    margin-left: 15px; /* Adjust this as needed to align with the right edge of the .ways-to-give-container */
+}
+.image-donate-container::after {
+    content: none;
+}
+.image-donate-container img {
+    width: 90%;
+    height: auto;
+    margin: 0; /* Ensure there's no margin on the image */
+}
+.image-donate-container .donate-button {
+    background-color: #ade47a;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    width: 90%; /* Button width to match the image width */
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    margin-top: -23%; /* Adjust this value to bring the button closer to the image */
+    font-weight: bold;
+    transition: all 0.3s ease; /* Optional: For smooth transition effects */
+}
+.image-donate-container .donate-button:hover {
+    background-color: white; /* Change background to white */
+    color: #ade47a; /* Change text color to #ADE47A */
+    border: 3px solid #ade47a; /* Add a 3px solid border with color #ADE47A */
+}
+
+button {
+    margin: 0;
+    padding: 0;
+    overflow: visible; /* In case there's an overflow issue */
+}

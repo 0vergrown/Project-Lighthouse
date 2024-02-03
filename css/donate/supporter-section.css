@@ -1,0 +1,71 @@
+.supporters-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 150px;
+}
+
+.wish-list h1 {
+    color: #7798CD;
+    font-size: 40px;
+}
+
+.wish-list p {
+    color: black;
+    font-size: 30px;
+    text-align: left;
+    max-width: 900px;
+}
+
+.wish-list-items {
+    position: relative;
+}
+
+.vertical-line {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 15px;
+    background-color: #ADE47A;
+}
+
+.wish-list-items ul {
+    list-style-type: none;
+    padding-left: 50px;
+    color: black;
+}
+
+.wish-list-items li {
+    margin-bottom: 10px;
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+
+.supporters {
+    flex-grow: 1;
+    max-width: calc(100% - 950px); /* Adjust this value based on the total width of your site */
+    margin-right: -35px; /* Reduced the nudge to the right */
+}
+
+.supporters .supporters-heading {
+    margin-top: 20px;
+    border: 3px solid #7798CD;
+    padding: 20px;
+    min-height: 700px;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: flex-start; /* Align children to the start horizontally */
+    justify-content: flex-start; /* Align children to the start vertically */
+    width: 90%;
+    box-sizing: border-box;
+}
+
+.supporters-heading h2 {
+    color: #7798CD;
+    font-size: 40px;
+    font-weight: bold; /* Make the text bold */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2); /* Added text shadow */
+    margin-top: 0; /* Remove any default margins */
+    margin-bottom: 20px; /* Space from the title to content inside the container */
+}

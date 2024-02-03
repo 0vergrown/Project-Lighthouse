@@ -1,0 +1,22 @@
+.donation-cta {
+    text-align: center;
+    margin-top: 20px; /* This provides spacing above the call-to-action */
+}
+
+.donation-text {
+    color: #7798cd; /* Blue color */
+    margin-bottom: 20px; /* Spacing between the "Make a Donation" text and the paragraph */
+    font-size: 48px; /* Adjusted font size for emphasis, slightly smaller */
+    font-weight: bold; /* Bold for the call-to-action */
+    display: block; /* This will ensure the text is on its own line */
+}
+
+.donation-info {
+    text-align: left;
+    color: #000000; /* Black color */
+    margin: 20px auto; /* Centers the block horizontally and adds space above */
+    font-size: 23px; /* Adjusted font size for the descriptive text, slightly smaller */
+    font-weight: normal; /* Regular font weight */
+    max-width: 600px; /* Fixed maximum width to constrain the paragraph */
+    line-height: 1.6; /* Adjust line height for better readability */
+}

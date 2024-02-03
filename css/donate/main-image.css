@@ -1,0 +1,14 @@
+.image-container {
+    max-width: 100%; /* Use 100% to ensure it fits the screen width */
+    margin: auto;
+    padding: 0 100px; /* Same padding as body for consistent alignment */
+    box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+.img-fluid {
+    width: calc(100% + 200px); /* Counteract the padding by increasing width */
+    max-width: none; /* Override any max-width properties */
+    margin-left: -100px; /* Offset the padding */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove any extra space below the image */
+}

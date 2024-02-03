@@ -1,0 +1,67 @@
+.more-actions-section {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.section-title {
+    color: #7798cd;
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-size: 45px; /* Adjust the size as needed */
+}
+
+.action-boxes {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.action-box {
+    background: #fff; /* Assuming a white background */
+    padding: 20px;
+    width: 50%; /* Each box will take up half the container's width */
+    box-sizing: border-box;
+    border-top: 3px solid #f5dd68;
+    border-bottom: 3px solid #f5dd68;
+}
+
+/* Only add left border to the first box and right border to the second */
+.action-box:first-child {
+    border-left: 3px solid #f5dd68;
+    border-right: 3px solid #f5dd68;
+}
+
+.action-box:last-child {
+    border-right: 3px solid #f5dd68;
+}
+
+.action-box p {
+    max-width: 345px; /* Constricted width for the text */
+    margin-left: auto;
+    margin-right: auto; /* Centers the text block */
+    text-align: left;
+}
+
+.box-title {
+    color: #f5dd68;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.action-btn {
+    color: #f5dd68;
+    border: 3px solid #f5dd68;
+    padding: 5px 10px;
+    margin-top: 5px;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 20px; /* Rounded borders */
+    display: inline-block; /* Allows the use of text-align */
+    text-align: center;
+    width: 85px; /* Fixed width to make it rounder */
+}
+
+.action-btn:hover {
+    background-color: #f5dd68;
+    color: white;
+}

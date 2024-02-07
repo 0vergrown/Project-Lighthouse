@@ -1,0 +1,70 @@
+.worker-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.worker-section > div {
+    margin: 40px 0; /* Increased margin to accommodate larger titles */
+    width: 100%;
+    max-width: 600px;
+    position: relative; /* Ensures that the container's layout is well defined */
+}
+
+.worker-title {
+    color: #7798CD;
+    font-size: 50px; /* Adjusted font size */
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px; /* Space between title and content */
+}
+
+.worker-content {
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    flex-wrap: wrap;
+    background-color: #F5DD68; /* Default background color for worker content */
+}
+
+.worker-content p {
+    flex: 1;
+    margin: 0 20px;
+    max-width: 400px;
+}
+
+.worker-content img {
+    width: 150px;
+    height: auto;
+}
+
+/* Specific alignments and colors */
+.worker-1, .worker-3 {
+    align-self: flex-end;
+}
+
+.worker-2 {
+    align-self: flex-start;
+}
+
+.worker-2 .worker-content {
+    background-color: rgba(173, 228, 122, 0.84);
+}
+
+/* Specific color adjustment for worker 3 */
+.worker-3 .worker-content {
+    background-color: #7798CD; /* Change worker 3's background color */
+}
+
+@media (max-width: 768px) {
+    .worker-content {
+        flex-direction: column;
+    }
+    .worker-content img, .worker-content p {
+        margin-bottom: 20px;
+    }
+    .worker-1, .worker-2, .worker-3 {
+        align-self: center; /* Center all items on smaller screens */
+    }
+}

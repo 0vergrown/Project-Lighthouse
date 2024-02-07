@@ -197,3 +197,117 @@ input:focus {
     height: 2px; /* Height of the line */
     background-color: #F99659; /* Color of the line */
 }
+
+/* Tablet screens */
+@media (max-width: 1670px) {
+    .donation-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .text-section, .donation-buttons {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+    .impact-text {
+        font-size: 28px; /* Adjusted for tablet screens */
+    }
+    .donate-text {
+        font-size: 20px; /* Adjusted for tablet screens */
+    }
+    .donation-button,
+    .donation-option,
+    .amount-option {
+        width: 60%; /* Adjust button width for smaller screens */
+        font-size: 18px; /* Adjust font size for readability */
+        padding: 15px 15px; /* Adjust padding for a proportional look */
+    }
+    .donation-custom-amount {
+        flex-direction: column;
+        align-items: center;
+    }
+    .custom-amount-input,
+    .currency-symbol,
+    .usd-label {
+        position: static; /* Reset position for better alignment */
+        margin: 5px 0; /* Add some spacing */
+    }
+    .donation-custom-amount {
+        flex-direction: row; /* Change back to row for correct positioning */
+        justify-content: center; /* Center the content */
+        position: relative; /* Ensure the position is relative for children positioning */
+    }
+
+    .currency-symbol,
+    .usd-label {
+        position: static; /* Remove absolute positioning */
+        margin: 0 5px; /* Add some horizontal margin */
+    }
+
+    .custom-amount-input {
+        flex-grow: 1; /* Allow the input to grow as needed */
+        margin: 0 10px; /* Add some horizontal margin */
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 526px) {
+    /* Centering text */
+    .text-section {
+        text-align: center;
+    }
+    .impact-text,
+    .donate-text {
+        font-size: 22px; /* Adjust if necessary for better visibility */
+    }
+
+    /* Stacking the Give Once and Monthly buttons vertically */
+    .options-row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .donation-option {
+        width: 80%; /* Adjust based on your design preference */
+        margin: 10px 0; /* Adds space between these buttons */
+    }
+
+    /* Adjusting the layout for amount options */
+    .amounts-row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .amount-column {
+        display: flex;
+        justify-content: space-between;
+        width: 100%; /* Ensures that the container takes full width */
+    }
+    .amount-option {
+        box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+        width: calc(50% - 10px); /* Adjusts width accounting for margin and ensures buttons are the same width */
+        margin: 5px; /* Adjusts margin to ensure consistent spacing */
+    }
+
+    .donation-custom-amount {
+        flex-direction: row; /* Ensure alignment is in a row */
+        justify-content: center; /* Center the content */
+    }
+
+    .currency-symbol,
+    .usd-label {
+        font-size: 16px; /* Reduce the font size */
+        position: absolute; /* Keep them positioned absolutely */
+        top: 50%; /* Align vertically */
+        transform: translateY(-50%); /* Center vertically */
+    }
+    .currency-symbol {
+        left: 10px; /* Position from the left */
+    }
+    .usd-label {
+        right: 10px; /* Position from the right */
+    }
+
+    .custom-amount-input {
+        padding-left: 30px; /* Add padding to prevent text from hiding behind the symbol */
+        padding-right: 30px; /* Add padding to prevent text from hiding behind the label */
+        text-align: left; /* Align the text to the left */
+    }
+}

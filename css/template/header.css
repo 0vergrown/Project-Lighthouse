@@ -1,0 +1,109 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+}
+
+.logo-container,
+.nav-container {
+    display: flex;
+    align-items: center;
+}
+
+.nav-container {
+    align-self: flex-start;
+    padding-top: 140px;
+}
+
+.logo {
+    height: 200px;
+    width: 150px;
+}
+
+.logo-text {
+    color: #f99659;
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 40px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.logo-text:hover {
+    color: #7798cd;
+}
+
+.donate-now-button {
+    background-color: #f99659;
+    border: none;
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.donate-now-button:hover {
+    background-color: #7798cd;
+}
+
+.sign-in-text {
+    color: #f99659;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.sign-in-text:hover {
+    color: #7798cd;
+}
+
+/* Adjustments for screen widths of 1365px */
+@media (max-width: 1365px) {
+    .donate-now-button,
+    .sign-in-text {
+        display: none; /* Hide donate and sign in texts */
+    }
+}
+
+/* Adjustments for screen widths of 950px */
+@media (max-width: 950px) {
+    .logo-text {
+        display: none; /* Hide main text */
+    }
+    header {
+        justify-content: center; /* Center the elements in the header */
+    }
+    .logo-container {
+        justify-content: center; /* Center the logo within its container */
+    }
+    .nav-container {
+        display: none; /* Optionally hide the nav-container if it's empty */
+    }
+}
+
+/* Adjust logo size for smaller screens if needed */
+@media (max-width: 768px) {
+    .logo {
+        height: 150px; /* Adjust logo height */
+        width: 112.5px; /* Adjust logo width to maintain aspect ratio */
+    }
+    /* Other adjustments for smaller elements */
+}
+
+/* Further adjustments for very small screens */
+@media (max-width: 480px) {
+    .logo {
+        height: 100px;
+        width: 75px;
+    }
+}

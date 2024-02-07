@@ -1,0 +1,21 @@
+.our-mission-container {
+    padding: 20px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.our-mission-container h2 {
+    color: #7798CD;
+    font-size: 50px; /* Adjust font size as needed */
+    font-weight: bold;
+    margin-bottom: 50px; /* Adjust the space below the title */
+}
+
+.our-mission-container p {
+    color: black;
+    line-height: 1.6; /* Adjust line height for better readability */
+    max-width: 49%; /* Restrict paragraph width */
+    margin: auto; /* Center the paragraph within the container */
+    text-align: left;
+    font-size: 20px;
+}

@@ -84,3 +84,38 @@
         }
     }
 }
+
+/* Media Query for smaller screens */
+@media (max-width: 1365px) {
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .about-section-image {
+        width: 100%;
+        padding-top: 56.25%; /* Adjust for aspect ratio */
+        margin-bottom: 20px; /* Add space between image and content */
+    }
+
+    /* Position the white line as a horizontal separator under the image */
+    .about-section::before {
+
+        display: none;
+    }
+
+    .about-section-content {
+        padding: 0; /* Remove padding to align content properly */
+        max-width: 100%; /* Allow content to fill the available space */
+        order: 2; /* Ensure content comes after the white line */
+    }
+
+    .about-section-content h2 {
+        font-size: 35px; /* Adjust font size for smaller screens */
+    }
+
+    .about-section-content p {
+        font-size: 18px; /* Adjust font size for readability */
+    }
+}

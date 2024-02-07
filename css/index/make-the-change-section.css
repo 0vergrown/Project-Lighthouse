@@ -49,3 +49,37 @@
     background-color: white;
     color: #F99659;
 }
+
+/* For tablets and below */
+@media (max-width: 1365px) {
+    .make-the-change-section {
+        flex-direction: column;
+    }
+    .make-the-change-image img {
+        display: none;
+    }
+
+    .make-the-change-box {
+        width: 80%; /* Adjust width for smaller screens */
+    }
+
+    .make-the-change-box h2 {
+        font-size: 1.5em; /* Adjust font size */
+    }
+
+    .join-us-button {
+        font-size: 0.9em; /* Adjust button font size */
+    }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+    .make-the-change-box h2 {
+        font-size: 1.2em; /* Further reduce font size for very small screens */
+    }
+
+    .join-us-button {
+        padding: 8px 16px; /* Adjust button padding */
+        font-size: 0.8em; /* Adjust button font size */
+    }
+}

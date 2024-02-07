@@ -1,0 +1,14 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    font-family: "Segoe UI", sans-serif;
+}
+
+/* Larger screens */
+@media (min-width: 768px) {
+    body {
+        padding-left: 100px; /* Adjust as needed */
+        padding-right: 100px; /* Adjust as needed */
+    }
+}

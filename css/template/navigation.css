@@ -1,0 +1,195 @@
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #707070;
+    background-color: #fff;
+    padding: 10px 20px;
+}
+
+.nav-left,
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    box-sizing: border-box;
+    color: #000;
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 20px; /* Adjust as needed for spacing */
+    padding: 5px 10px; /* Add padding for a better box effect */
+    transition: all 0.3s ease; /* Optional: For smooth transition effects */
+}
+.nav-link.active {
+    color: #F88037 !important; /* Active link color */
+}
+
+.nav-link.active:hover {
+    color: #fff !important; /* White color on hover for the active link */
+}
+.nav-link:hover {
+    color: #7798cd;
+    padding: 5px 9px; /* Adjusted to offset any additional border width */
+    transform: scale(1.05);
+}
+.nav-home:hover {
+    background-color: #f99659;
+    color: #fff;
+}
+
+.nav-about:hover {
+    background-color: #f5dd68;
+    color: #fff;
+}
+
+.nav-events:hover {
+    background-color: #ade47a;
+    color: #fff;
+}
+
+.nav-join:hover {
+    background-color: #7798cd;
+    color: #fff;
+}
+
+.nav-donate:hover {
+    background-color: #f99659;
+    color: #fff;
+}
+
+.nav-gallery:hover {
+    background-color: #f5dd68;
+    color: #fff;
+}
+.nav-faq:hover {
+    background-color: #ade47a;
+    color: #fff;
+}
+.nav-reach:hover {
+    background-color: #7798cd;
+    color: #fff;
+}
+
+.facebook-icon {
+    color: #f99659; /* Set the icon color */
+    font-size: 40px; /* Adjust the size as needed */
+}
+
+.facebook-icon:hover {
+    color: #7798cd; /* Color on hover */
+}
+/* Hide hamburger menu on larger screens */
+.hamburger-menu {
+    display: none; /* Ensure it's hidden by default */
+}
+/* Overlay Fullscreen Style */
+.overlay {
+    display: flex; /* Changed from 'none' to 'flex' to keep the structure, but will initially be off-screen */
+    position: fixed; /* Fixed position to cover the whole screen */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0,0,0,0.9); /* Black background with opacity */
+    z-index: 1; /* Above other content */
+    justify-content: center; /* Center children horizontally */
+    align-items: center; /* Center children vertically */
+    overflow-y: auto; /* Enable scrolling if content overflows */
+    box-sizing: border-box; /* Border-box sizing model */
+    transform: translateX(-100%); /* Start off-screen */
+    transition: transform 0.5s ease; /* Smooth slide in/out */
+}
+.overlay.active {
+    transform: translateX(0); /* Slide in to view */
+}
+
+.overlay-content {
+    text-align: center; /* Center text */
+    max-width: 600px; /* Max width for the content */
+    width: 100%; /* Make it responsive */
+    position: relative;
+
+    display: flex; /* or 'grid' */
+    flex-direction: column; /* for flex */
+    align-items: center; /* for flex, centers children horizontally in the flex direction */
+    justify-content: center;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.closebtn {
+    display: none; /* Hide by default, only show when overlay is active */
+    position: absolute; /* Position absolutely within the nearest relative parent */
+    top: -10px; /* Adjust this value to position the button right above the content */
+    right: -10px; /* Adjust to position slightly outside the top-right corner of content */
+    z-index: 2; /* Ensure it's above the content */
+    color: #818181;
+    font-size: 30px; /* Adjust size for visibility */
+}
+.overlay.active .closebtn {
+    display: block; /* Show only when the overlay is active */
+}
+@media (max-width: 1365px) {
+    .nav-left, .nav-right {
+        display: none; /* Hide navigation links */
+    }
+    .hamburger-menu {
+        display: block; /* Show hamburger menu */
+        margin: 0 auto; /* Center hamburger menu */
+        font-size: 30px; /* Initial size, adjust as needed */
+        cursor: pointer;
+    }
+    .main-nav {
+        justify-content: center; /* Center content (hamburger menu) */
+    }
+    .closebtn {
+        right: calc(100% - ((100% - 600px) / 2) - 50px); /* Example for wider screens, adjust '600px' as per your overlay-content width */
+    }
+}
+
+/* Responsive adjustments for the hamburger menu icon */
+@media (max-width: 1200px) {
+    .hamburger-menu {
+        font-size: 28px;
+    }
+    .closebtn {
+        right: calc(100% - ((100% - 90%) / 2) - 50px); /* Adjusted dynamically */
+    }
+}
+
+@media (max-width: 768px) {
+    .hamburger-menu {
+        font-size: 25px; /* Even smaller for very small screens */
+    }
+    .overlay-content {
+        max-width: 90%; /* Adjust max width for smaller screens */
+    }
+    .closebtn {
+        right: 20px; /* Closer to the content, considering the overlay takes up more width */
+        top: 20px; /* Adjusted for better accessibility */
+        font-size: 30px; /* Ensure visibility */
+    }
+}
+@media (max-width: 480px) {
+    .overlay-content {
+        padding-top: 40px; /* Adjust padding to fit smaller screens */
+    }
+    .closebtn {
+        right: 15px; /* Ensures button does not go off-screen */
+        top: 15px; /* Fine-tune position for accessibility */
+        font-size: 25px; /* Adjust size for small screens */
+    }
+}

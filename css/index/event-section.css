@@ -181,3 +181,9 @@
     color: #ade47a;
     border: 2px solid #ade47a;
 }
+/* Hide the events section on screens smaller than 768px */
+@media (max-width: 768px) {
+    .events-section {
+        display: none;
+    }
+}

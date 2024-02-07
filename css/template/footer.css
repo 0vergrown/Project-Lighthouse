@@ -33,18 +33,15 @@ footer .column.a.contact {
     flex-direction: column;
     text-align: center;
 }
-footer .column.a.contact a {
-    display: inline-flex;
-    align-items: center;
-    color: white; /* Default text color */
-    gap: 8px; /* Adjusts space between the icon and text */
-}
 
 footer .column.a.contact svg {
-    width: 16px;
-    height: 16px;
+    width: 16px; /* or your preferred size */
+    height: 16px; /* or your preferred size */
     fill: white;
     margin-right: 5px;
+    min-width: 16px; /* Set a minimum width */
+    min-height: 16px; /* Set a minimum height */
+    flex-shrink: 0; /* Prevent shrinking */
 }
 
 footer .column.a.contact h2 {
@@ -62,6 +59,14 @@ footer .column.a.contact a {
     justify-content: center;
     align-items: center;
     margin-bottom: 10px;
+    gap: 8px; /* Adjusts space between the icon and text */
+}
+footer .column.a.contact a svg {
+    margin-right: 8px; /* Provides spacing between the SVG icon and the text */
+}
+footer .column.a.contact a span {
+    display: block; /* Makes the span a block-level element */
+    text-align: center; /* Centers the text within the span */
 }
 
 footer .column.b {
@@ -177,4 +182,76 @@ footer .column.a.contact a[href*="mailto:"]:hover {
 footer .column.contact a:last-child:hover {
     color: #f5dd68;
     transition: all 0.3s ease; /* Optional: For smooth transition effects */
+}
+/* For tablets and below */
+@media (max-width: 1023px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .column {
+        width: 100%;
+        padding: 15px;
+        border-right: none !important; /* Ensure vertical borders are removed */
+        border-left: none !important; /* Ensure vertical borders are removed */
+        border-bottom: 1.5px solid white; /* Add horizontal border */
+        justify-content: center;
+        text-align: center;
+    }
+    footer .column.right-border {
+        border-right: none !important;
+    }
+
+    footer .column.left-border {
+        border-left: none !important;
+    }
+    footer .column.a.contact svg {
+        width: 20px; /* Slightly larger for tablet */
+        height: 20px; /* Slightly larger for tablet */
+    }
+    /* Remove the bottom border from the last .column element */
+    footer .column:last-child {
+        border-bottom: none;
+    }
+
+    footer .column.a,
+    footer .column.b {
+        align-items: center;
+    }
+
+    footer .column.a.contact,
+    footer .column.b {
+        text-align: center;
+    }
+
+    footer ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer ul li {
+        width: 100%;
+    }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+    footer .column.a.contact h2,
+    footer .column.b h2,
+    footer .column.b h3 {
+        font-size: 20px;
+    }
+
+    footer ul li a {
+        font-size: 20px;
+    }
+    /* Hide "Child Advocacy Center" text on tablet and below */
+    footer .column.b h3 {
+        display: none;
+    }
+    footer .column.a.contact svg {
+        width: 24px; /* Even larger for mobile */
+        height: 24px; /* Even larger for mobile */
+    }
 }

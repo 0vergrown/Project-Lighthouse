@@ -2,9 +2,11 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>First Light CAC :: Home</title>
-        <link rel="stylesheet" href="css/template/header-and-navigation.css" />
+        <link rel="stylesheet" href="css/template/body.css" />
+        <link rel="stylesheet" href="css/template/header.css" />
+        <link rel="stylesheet" href="css/template/navigation.css" />
         <link rel="stylesheet" href="css/index/slideshow.css" />
         <link rel="stylesheet" href="css/index/about-section.css" />
         <link rel="stylesheet" href="css/index/donation-section.css" />
@@ -38,6 +40,7 @@
         *******************************************************************************
         -->
 
+        <!-- Regular Navigation Bar -->
         <nav class="main-nav">
             <div class="nav-left">
                 <a href="index.html" class="nav-link nav-home active">Home</a>
@@ -51,6 +54,24 @@
                 <a href="faq.html" class="nav-link nav-faq">FAQ</a>
                 <a href="reach-out.html" class="nav-link nav-reach">Reach Out</a>
                 <a href="https://www.facebook.com/p/First-Light-Child-Advocacy-Center-of-Grant-County-100060388281965/" class="nav-link facebook-icon"><i class="bi bi-facebook"></i></a>
+            </div>
+
+            <div class="hamburger-menu" onclick="toggleOverlayMenu()">☰</div>
+            <!-- Hamburger Icon -->
+            <div class="overlay" id="overlayMenu">
+                <a href="javascript:void(0)" class="closebtn" onclick="toggleOverlayMenu()">&times;</a>
+                <!-- Close Button -->
+                <div class="overlay-content">
+                    <a href="index.html" class="nav-link nav-home active">Home</a>
+                    <a href="about.html" class="nav-link nav-about">About</a>
+                    <a href="events.html" class="nav-link nav-events">Events</a>
+                    <a href="volunteer.html" class="nav-link nav-join">Join Us</a>
+                    <a href="donate.html" class="nav-link nav-donate">Donate</a>
+                    <a href="gallery.html" class="nav-link nav-gallery">Gallery</a>
+                    <a href="faq.html" class="nav-link nav-faq">FAQ</a>
+                    <a href="reach-out.html" class="nav-link nav-reach">Reach Out</a>
+                    <a href="https://www.facebook.com/p/First-Light-Child-Advocacy-Center-of-Grant-County-100060388281965/" class="nav-link facebook-icon"><i class="bi bi-facebook"></i></a>
+                </div>
             </div>
         </nav>
 
@@ -83,10 +104,7 @@
                 <div class="about-section-image" style="background-image: url(images/index/about_section/hugs.png);"></div>
                 <div class="about-section-content">
                     <h2>About Our <strong>Organization</strong></h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Semper viverra nam libero justo laoreet sit amet. Elit at imperdiet dui accumsan sit amet
-                        nulla facilisi. Ut etiam sit amet nisl purus in mollis. Etiam erat velit scelerisque in dictum.
-                    </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Semper viverra nam libero justo laoreet sit amet. Elit at imperdiet dui accumsan sit amet nulla facilisi. Ut etiam sit amet nisl purus in mollis. Etiam erat velit scelerisque in dictum.</p>
                     <a href="about.html" class="read-more-btn">Read More</a>
                 </div>
             </div>
@@ -177,6 +195,7 @@
                     <img src="images/index/make_the_change_section/piggyback.png" alt="Change Image Right" />
                 </div>
             </div>
+            
         </main>
 
         <!--
@@ -246,6 +265,7 @@
         </footer>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.5.0/js/bootstrap.bundle.min.js"></script>
+        <script src="javascript/template/hamburger-menu.js"></script>
         <script src="javascript/index/slideshow.js"></script>
         <script src="javascript/index/donation-button-toggle.js"></script>
     </body>

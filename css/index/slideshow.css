@@ -44,3 +44,13 @@
         margin-left: -50px; /* Adjust margin for smaller screens */
     }
 }
+@media (max-width: 480px) {
+    .slideshow-container {
+        padding: 0 20px; /* Even less padding for very small screens */
+    }
+
+    .mySlides img {
+        width: calc(100% + 40px); /* Adjust width accordingly */
+        margin-left: -20px; /* Adjust margin accordingly */
+    }
+}
